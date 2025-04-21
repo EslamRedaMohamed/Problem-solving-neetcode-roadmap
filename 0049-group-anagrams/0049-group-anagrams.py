@@ -6,8 +6,8 @@ class Solution:
             str_sorted_tuple = tuple(sorted(str))
 
             if str_sorted_tuple in memo:
-                memo[str_tuple].append(str)
+                memo[str_sorted_tuple].append(str)
             else:
-                memo[str_tuple] = [str]
+                memo[str_sorted_tuple] = [str]
 
         return list(memo.values())
